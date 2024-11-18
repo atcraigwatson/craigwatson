@@ -1,0 +1,68 @@
+.section-home-jumbotron {
+  height: calc(100vh - 56px);
+}
+
+.home-h1-pre-text {
+  color: $secondary;
+  font-size: 1.25rem;
+  font-family: monospace;
+  text-transform: lowercase;
+}
+
+// Styles specific to elements on the /about-me page.
+.about-page-lead {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: $slate-200;
+  text-align: center;
+  @include media-breakpoint-up(sm) { 
+    font-size: 2.75rem;
+  }
+  @include media-breakpoint-up(md) { 
+    text-align: left;
+  }
+  @include media-breakpoint-up(lg) { 
+    font-size: 3.25rem;
+  }
+  @include media-breakpoint-up(xl) { 
+    font-size: 4rem;
+    max-width: 75%;
+  }
+}
+
+.things-to-know {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up(lg) { 
+    min-height: 500px;
+    background-position: 30% 100px;
+  }
+}
+
+#ttk-family {
+  background-image: url('../images/craigwatson-ttk-circles.png');
+}
+
+#ttk-granddad {
+  background-image: url('../images/craigwatson-ttk-poly.png');
+}
+
+#ttk-sport {
+  background-image: url('../images/craigwatson-ttk-triangles.png');
+}
+
+.current-skills {
+  border-left: 4px solid $secondary;
+}
+
+.summary {
+  columns: 1 auto;
+  @include media-breakpoint-up(md) { 
+    columns: 2 auto;
+    column-gap: $spacer *2;
+  }
+  @include media-breakpoint-up(md) { 
+    columns: 2 auto;
+  }
+}

@@ -1,0 +1,17 @@
+.progress-dashes {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+}
+
+.progress-dash {
+  height: 10px;
+  width: 30px;
+  transform: skewX(-30deg);
+  @include media-breakpoint-up(lg) { 
+    height: 20px;
+    width: 60px;
+  }
+}
+

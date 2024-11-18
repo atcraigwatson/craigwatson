@@ -1,0 +1,49 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+$slate-100: #f8f9fa !default;
+$slate-200: #A9A8AC !default;
+$slate-300: #57575B !default;
+$slate-400: #2C2D31 !default;
+$slate-500: #22222C !default;
+$slate-600: #1C1C26 !default;
+$slate-700: #171721 !default;
+
+$primary  : $slate-600;
+$secondary: #2B70FD;
+$success  : #629F75;
+$info     : #80D1FD;
+$danger   : #C2544D;
+$warning  : #DBB47D;
+$dark     : $slate-300;
+
+$body-bg: $primary;
+$body-color: $slate-100;
+
+$roboto-font-stack : "Roboto", sans-serif;
+$roboto-mono-font-stack : "Roboto Mono", monospace;
+$merriweather-font-stack : "Merriweather", serif;
+
+$font-family-base: $merriweather-font-stack;
+
+$display-font-family: $roboto-font-stack;
+$display-font-style:  normal;
+$display-font-weight: 700;
+
+$display-font-sizes: (
+  1: 7rem,
+  2: 5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$headings-color: $slate-100;
+$headings-font-family:        $roboto-font-stack;
+$headings-font-style:         normal;
+$headings-font-weight:        700;
+
+$link-color: $info;

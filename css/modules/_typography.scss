@@ -1,0 +1,49 @@
+p {
+  letter-spacing: 1px;
+}
+
+
+
+
+.heading-underline::before {
+  content: "";
+  height: 50%;
+  width: 110%;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  background-color: $secondary;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+.display-subheading {
+  font-family: $merriweather-font-stack;
+  font-size: 2rem;
+  font-weight: 400;
+  color: $slate-200;
+}
+
+.wp-block-quote {
+  padding: $spacer * 1.5;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  background-color: $slate-400;
+  border-left: 2px solid $secondary;
+
+  p {
+    margin: 0;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.125rem;
+  }
+
+  cite {
+    color: $slate-200;
+  }
+
+}
+
+.wp-block-button__link {
+  @extend .btn;
+}
