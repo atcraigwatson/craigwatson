@@ -139,7 +139,7 @@ get_header(); ?>
       </div>
       <div class="col-12 mb-5">
         <h3 class="display-5">Useful Links</h3>
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
           <a class="btn btn-outline-secondary me-3" href="https://github.com/atcraigwatson">Github</a>
           <a class="btn btn-outline-secondary me-3" href="https://codepen.io/atcraigwatson">Codepen</a>
           <a class="btn btn-outline-secondary me-3" href="/contact-me">Email Me</button>
