@@ -51,8 +51,8 @@ get_header(); ?>
       </div>
       <div class="col-12 col-lg-4">
         <div class="things-to-know bg-info text-primary d-flex flex-column h-100 p-5" id="ttk-granddad">
-          <h3 class="fs-2">Never Give In</h3>
-          <p class="fs-4">a favorite saying of my late granddad</p>
+          <h3 class="fs-2 text-dark">Never Give In</h3>
+          <p class="fs-4 text-dark">a favorite saying of my late granddad</p>
           <img class="align-self-start mt-auto" src="<?php echo get_template_directory_uri() . '/images/craigwatson-ttk-lion.png' ?>" alt="">
         </div>
       </div>
