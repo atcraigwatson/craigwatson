@@ -34,7 +34,7 @@ get_header(); ?>
         <img class="about-page-profile-picture img-fluid solid-blue-shadow" src="<?php echo get_template_directory_uri() . '/images/craigwatson-profile-picture.jpg' ?>" alt="A profile picture of Craig Watson">
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-        <p class="about-page-lead">i have a passion for solving problems</p>
+        <p class="about-page-lead fw-bold">i have a passion for solving problems</p>
       </div>
     </div>
     <div class="row align-items-stretch py-5">
