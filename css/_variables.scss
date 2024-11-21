@@ -3,6 +3,12 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+// Custom colours
+//
+// Define project related colours and override the default bootstrap variables with
+// them as needed.
+
+// Slate colour scale
 $slate-100: #f8f9fa !default;
 $slate-200: #A9A8AC !default;
 $slate-300: #57575B !default;
@@ -11,6 +17,7 @@ $slate-500: #22222C !default;
 $slate-600: #1C1C26 !default;
 $slate-700: #171721 !default;
 
+// Override bootstraps theme colours
 $primary  : $slate-600;
 $secondary: #2B70FD;
 $success  : #629F75;
@@ -19,16 +26,32 @@ $danger   : #C2544D;
 $warning  : #DBB47D;
 $dark     : $slate-300;
 
-$body-bg: $primary;
+// Body
+//
+// Override settings for the `<body>` element.
 $body-color: $slate-100;
+$body-bg: $primary;
 
-$font-weight-base:  300;
+// Links
+//
+// Style anchor elements.
+$link-color: $info;
 
+// Typography
+//
+// Override settings for font, line-height, and color for body text, headings, and more.
 $roboto-font-stack : "Roboto", sans-serif;
 $roboto-mono-font-stack : "Roboto Mono", monospace;
 $merriweather-font-stack : "Merriweather", serif;
 
 $font-family-base: $merriweather-font-stack;
+
+$font-weight-base:  300;
+
+$headings-color: $slate-100;
+$headings-font-family:        $roboto-font-stack;
+$headings-font-style:         normal;
+$headings-font-weight:        700;
 
 $display-font-family: $roboto-font-stack;
 $display-font-style:  normal;
@@ -43,9 +66,7 @@ $display-font-sizes: (
   6: 2.5rem
 );
 
-$headings-color: $slate-100;
-$headings-font-family:        $roboto-font-stack;
-$headings-font-style:         normal;
-$headings-font-weight:        700;
-
-$link-color: $info;
+// Adjust default $box-shadow variable
+//
+// $box-shadow: <offset-x> <offset-y> <blur> <color>;
+$box-shadow: -1rem 1rem 0 $secondary;
