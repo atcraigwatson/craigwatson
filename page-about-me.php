@@ -31,7 +31,7 @@ get_header(); ?>
   <article class="container">
     <div class="row flex-row-reverse py-5">
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-        <img class="about-page-profile-picture img-fluid solid-blue-shadow" src="<?php echo get_template_directory_uri() . '/images/craigwatson-profile-picture.jpg' ?>" alt="A profile picture of Craig Watson">
+        <img class="about-page-profile-picture img-fluid shadow" src="<?php echo get_template_directory_uri() . '/images/craigwatson-profile-picture.jpg' ?>" alt="A profile picture of Craig Watson">
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
         <p class="about-page-lead fw-bold">i have a passion for solving problems</p>
@@ -123,7 +123,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="row py-5">
-      <div class="p-5 card-slate solid-blue-shadow">
+      <div class="p-5 card-slate shadow">
       <div class="col-12 mb-5">
         <h2 class="display-4">Summary</h2>
         <h3 class="display-subheading mb-0">a short summary about me and my coding journey</h3>
