@@ -4,25 +4,28 @@
 <!-- main -->
 <main>
 
-  <section class="py-5">
-    <div class="py-5 text-center container">
-        <div class="row py-lg-3">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="text-uppercase fw-bold"><?php the_title(); ?></h1>
-            </div>
+  <header class="bg-secondary border-top border-bottom py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-3 text-center heading-underline position-relative">
+            <?php the_title(); ?>
+          </h1>
+          <div class="text-center">
+            <small class="text-body-secondary">Posted - <?php echo get_the_date( 'd M Y' ); ?></small>
+          </div>
         </div>
+      </div>
     </div>
-  </section>
+  </header>
 
-<section class="">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-12">
+  <section class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 py-5">
         <?php the_content(); ?>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 </main>
 <!-- ./ main -->
