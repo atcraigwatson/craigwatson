@@ -9,28 +9,32 @@
 // them as needed.
 
 // Slate colour scale
-$slate-100: #f8f9fa !default;
-$slate-200: #A9A8AC !default;
-$slate-300: #57575B !default;
-$slate-400: #2C2D31 !default;
-$slate-500: #22222C !default;
-$slate-600: #1C1C26 !default;
+$slate-100: #49496E !default;
+$slate-200: #414162 !default;
+$slate-300: #393956 !default;
+$slate-400: #313149 !default;
+$slate-500: #29293D !default;
+$slate-600: #212130 !default;
 $slate-700: #171721 !default;
 
+// Brand Blue
+$blue-brand : #2B70FD;
+$off-white  : #E7E7EF;
+
 // Override bootstraps theme colours
-$primary  : $slate-600;
-$secondary: #2B70FD;
-$success  : #629F75;
+$primary  : $blue-brand;
+$secondary: $slate-500;
+$success  : #1EAE88;
 $info     : #80D1FD;
-$danger   : #C2544D;
-$warning  : #DBB47D;
-$dark     : $slate-300;
+$danger   : #C2474E;
+$warning  : #EE8434;
+$dark     : $slate-700;
 
 // Body
 //
 // Override settings for the `<body>` element.
-$body-color: $slate-100;
-$body-bg: $primary;
+$body-color: darken($off-white, 6%);
+$body-bg: $slate-600;
 
 // Links
 //
@@ -48,7 +52,7 @@ $font-family-base: $merriweather-font-stack;
 
 $font-weight-base:  300;
 
-$headings-color: $slate-100;
+$headings-color: $off-white;
 $headings-font-family:        $roboto-font-stack;
 $headings-font-style:         normal;
 $headings-font-weight:        700;
@@ -69,4 +73,12 @@ $display-font-sizes: (
 // Adjust default $box-shadow variable
 //
 // $box-shadow: <offset-x> <offset-y> <blur> <color>;
-$box-shadow: -1rem 1rem 0 $secondary;
+$box-shadow: -1rem 1rem 0 $primary;
+
+// Adjust default border color to work with the
+// generally darker background
+$border-color: $slate-300;
+
+// Adjust default badge font size and padding
+$badge-padding-y:                   .5rem;
+$badge-padding-x:                   .75rem;
