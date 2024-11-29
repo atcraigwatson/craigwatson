@@ -4,17 +4,9 @@
 <!-- main -->
 <main>
 
-  <section class="py-5">
-    <div class="py-5 text-center container">
-        <div class="row py-lg-3">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="text-uppercase fw-bold">Recent Projects</h1>
-            </div>
-        </div>
-    </div>
-  </section>
+  <?php get_template_part( 'template-parts/content', 'page-header' ); ?>
 
-  <section class="text-white">
+  <section>
     <div class="container py-5">
       <div class="row row-cols-1 row-cols-md-2 g-4">
 
@@ -22,14 +14,26 @@
         <?php the_post(); ?>
 
         <div class="col">
-          <div class="card card-slate">
-            <!-- <img src="<?php the_title(); ?>" class="card-img-top" alt="..."> -->
+          <div class="card bg-secondary">
+
             <?php echo get_the_post_thumbnail( $post->ID, 'full', array( 'class' => 'card-img-top h-auto' ) ); ?>
             <div class="card-body">
+
+              <!-- Display the related project-tag tax terms -->
+              <?php $terms = get_the_terms( $post->ID, 'project-tag' ); ?>  
+              <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
+                <div class="d-flex flex-wrap gap-2 pb-3">
+                <?php foreach ( $terms as $term ) : ?>
+                  <span class="badge py-2 px-4 bg-slate-300 rounded-pill"><?php echo $term->name ?></span>
+                <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
+              <!-- End project-tag tax terms -->
+
               <h5 class="card-title"><?php the_title(); ?></h5>
               <p class="card-text"><?php the_field('short_description') ?></p>
-              <!-- <a href="#" class="btn btn-secondary me-3">Read More</a> -->
-              <a href="<?php the_field('link_to_project') ?>" class="btn btn-outline-secondary">Visit Project</a>
+              <a href="<?php echo get_the_permalink(); ?>" class="btn btn-primary me-3">Read More</a>
+              <a href="<?php the_field('link_to_project') ?>" class="btn btn-outline-primary">Visit Project</a>
             </div>
           </div>
         </div>
