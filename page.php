@@ -22,15 +22,7 @@ get_header(); ?>
 <!-- main -->
 <main>
 
-  <header class="py-5 bg-secondary">
-    <div class="py-5 text-center container">
-        <div class="row py-lg-3">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="text-uppercase fw-bold"><?php the_title(); ?></h1>
-            </div>
-        </div>
-    </div>
-  </header>
+  <?php get_template_part( 'template-parts/content', 'page-header' ); ?>
 
   <article class="">
     <div class="container py-5">
