@@ -9,6 +9,7 @@
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
+@import './maps.scss';
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -50,11 +51,31 @@
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities, (
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: .25,
+        50: .5,
+        75: .75,
+        90: .9,
+        100: 1,
+      )
+    )
+  )
+);
+
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
 @import './modules/typography.scss';
+@import './modules/background-colors.scss';
+@import './modules/pre-code.scss';
 @import './modules/pages.scss';
-@import './modules/card-project.scss';
+@import './modules/tag-group.scss';
 @import './modules/progress.scss';
+@import './modules/blog-hero-header.scss';
 @import './modules/wp-forms.scss';
