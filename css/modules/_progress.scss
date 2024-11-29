@@ -9,6 +9,7 @@
   height: 10px;
   width: 30px;
   transform: skewX(-30deg);
+  border-radius: 0.25rem;
   @include media-breakpoint-up(lg) { 
     height: 20px;
     width: 60px;
