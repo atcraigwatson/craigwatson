@@ -10,13 +10,22 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="https://github.com/atcraigwatson" target="blank">Github</a>
+                <a class="nav-link" href="/about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://codepen.io/atcraigwatson" target="blank">Codepen</a>
+                <a class="nav-link" href="/projects">Recent Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">Blog Posts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact-me">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/atcraigwatson" target="blank">Github <i class="bi bi-box-arrow-up-right"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://codepen.io/atcraigwatson" target="blank">Codepen <i class="bi bi-box-arrow-up-right"></i></a>
               </li>
             </ul>
           </div>
