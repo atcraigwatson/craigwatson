@@ -2,18 +2,10 @@
   height: calc(100vh - 112px);
 }
 
-.home-h1-pre-text {
-  color: $secondary;
-  font-size: 1.25rem;
-  font-family: monospace;
-  text-transform: lowercase;
-}
-
 // Styles specific to elements on the /about-me page.
 .about-page-lead {
   margin-top: 2rem;
   font-size: 2rem;
-  color: $slate-200;
   text-align: center;
   @include media-breakpoint-up(sm) { 
     font-size: 2.75rem;
@@ -49,11 +41,12 @@
 }
 
 #ttk-sport {
+  background-color: $slate-300;
   background-image: url('../images/craigwatson-ttk-triangles.png');
 }
 
 .current-skills {
-  border-left: 4px solid $secondary;
+  border-left: 4px solid $primary;
 }
 
 .summary {
