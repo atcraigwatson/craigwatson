@@ -31,6 +31,7 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 function cw_add_theme_support() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
+  add_image_size( 'blog-home-thumb', 744, 300, array( 'center', 'center' ) );
 }
 add_action( 'after_setup_theme', 'cw_add_theme_support' );
 
