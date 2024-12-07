@@ -2,14 +2,14 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-@import './variables.scss';
+@import "./variables.scss";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
-@import './maps.scss';
+@import "./maps.scss";
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -53,29 +53,31 @@
 @import "../node_modules/bootstrap/scss/utilities";
 
 $utilities: map-merge(
-  $utilities, (
+  $utilities,
+  (
     "opacity": (
       property: opacity,
       values: (
         0: 0,
-        25: .25,
-        50: .5,
-        75: .75,
-        90: .9,
+        25: 0.25,
+        50: 0.5,
+        75: 0.75,
+        90: 0.9,
         100: 1,
-      )
-    )
+      ),
+    ),
   )
 );
 
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-@import './modules/typography.scss';
-@import './modules/background-colors.scss';
-@import './modules/pre-code.scss';
-@import './modules/pages.scss';
-@import './modules/tag-group.scss';
-@import './modules/progress.scss';
-@import './modules/blog-hero-header.scss';
-@import './modules/wp-forms.scss';
+@import "./modules/typography.scss";
+@import "./modules/background-colors.scss";
+@import "./modules/pre-code.scss";
+@import "./modules/pages.scss";
+@import "./modules/tag-group.scss";
+@import "./modules/progress.scss";
+@import "./modules/blog-hero-header.scss";
+@import "./modules/wp-forms.scss";
+@import "./modules/highlight-js.scss";

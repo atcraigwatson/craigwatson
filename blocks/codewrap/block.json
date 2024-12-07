@@ -1,0 +1,16 @@
+{
+  "name": "acf/codewrap",
+  "title": "Code Wrap",
+  "description": "A wrapper element that supports the code example inner blocks.",
+  "style": ["file:./codewrap.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["codewrap"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "codewrap.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

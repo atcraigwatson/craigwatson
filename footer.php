@@ -3,8 +3,7 @@
       Copyright @ craigwatson.io | <?php echo date("Y"); ?>
     </footer>
 
-    <script src="/build/js/index.js"></script>
-
     <?php wp_footer(); ?>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

@@ -1,1 +1,4 @@
-import "../css/style.scss"
+// Styles
+import "../css/style.scss";
+
+// Scripts

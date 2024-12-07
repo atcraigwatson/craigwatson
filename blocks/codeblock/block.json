@@ -1,0 +1,16 @@
+{
+  "name": "acf/codeblock",
+  "title": "Code Block",
+  "description": "A custom code block to add code snippets and information.",
+  "style": ["file:./codeblock.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["code"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "codeblock.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}
