@@ -9,31 +9,31 @@
 // them as needed.
 
 // Slate colour scale
-$slate-100: #49496E !default;
+$slate-100: #49496e !default;
 $slate-200: #414162 !default;
 $slate-300: #393956 !default;
 $slate-400: #313149 !default;
-$slate-500: #29293D !default;
+$slate-500: #29293d !default;
 $slate-600: #212130 !default;
 $slate-700: #171721 !default;
 
 // Brand Blue
-$blue-brand : #2B70FD;
-$off-white  : #E7E7EF;
+$blue-brand: #2b70fd;
+$off-white: #e7e7ef;
 
 // Override bootstraps theme colours
-$primary  : $blue-brand;
+$primary: $blue-brand;
 $secondary: $slate-500;
-$success  : #1EAE88;
-$info     : #80D1FD;
-$danger   : #C2474E;
-$warning  : #EE8434;
-$dark     : $slate-700;
+$success: #1eae88;
+$info: #80d1fd;
+$danger: #c2474e;
+$warning: #ee8434;
+$dark: $slate-700;
 
 // Body
 //
 // Override settings for the `<body>` element.
-$body-color: darken($off-white, 6%);
+$body-color: darken($off-white, 8%);
 $body-bg: $slate-600;
 
 // Links
@@ -44,21 +44,21 @@ $link-color: $info;
 // Typography
 //
 // Override settings for font, line-height, and color for body text, headings, and more.
-$roboto-font-stack : "Roboto", sans-serif;
-$roboto-mono-font-stack : "Roboto Mono", monospace;
-$merriweather-font-stack : "Merriweather", serif;
+$roboto-font-stack: "Roboto", sans-serif;
+$roboto-mono-font-stack: "Roboto Mono", monospace;
+$merriweather-font-stack: "Merriweather", serif;
 
 $font-family-base: $merriweather-font-stack;
 
-$font-weight-base:  300;
+$font-weight-base: 300;
 
 $headings-color: $off-white;
-$headings-font-family:        $roboto-font-stack;
-$headings-font-style:         normal;
-$headings-font-weight:        700;
+$headings-font-family: $roboto-font-stack;
+$headings-font-style: normal;
+$headings-font-weight: 700;
 
 $display-font-family: $roboto-font-stack;
-$display-font-style:  normal;
+$display-font-style: normal;
 $display-font-weight: 700;
 
 $display-font-sizes: (
@@ -67,7 +67,7 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
 );
 
 // Adjust default $box-shadow variable
@@ -80,5 +80,5 @@ $box-shadow: -1rem 1rem 0 $primary;
 $border-color: $slate-300;
 
 // Adjust default badge font size and padding
-$badge-padding-y:                   .5rem;
-$badge-padding-x:                   .75rem;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.75rem;
