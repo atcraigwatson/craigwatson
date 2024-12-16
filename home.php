@@ -121,18 +121,6 @@
 
     <section id="react-quote-card"></section>
 
-    <div class="card bg-secondary w-100 mb-3">
-      <div class="card-header border-bottom py-3">
-        Random Quotes
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>The way to get started is to quit talking and begin doing.</p>
-          <footer class="blockquote-footer">Walt Disney <cite title="Source Title"><a href="https://blog.hubspot.com/sales/famous-quotes">Hubspot famous quotes</a></cite></footer>
-        </blockquote>
-      </div>
-    </div>
-
     <div class="card bg-secondary w-100">
       <div class="card-header border-bottom py-3">
         Useful MDN Links

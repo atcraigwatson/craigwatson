@@ -11,20 +11,22 @@ const QuoteCard = () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch("https://zenquotes.io/api/random");
+        const response = await fetch(
+          "https://quoteslate.vercel.app/api/quotes/random"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch quote");
         }
         const data = await response.json();
-        setQuote(data.q);
-        setAuthor(data.a);
+        setQuote(data.quote);
+        setAuthor(data.author);
       } catch (error) {
         setError(error.message);
       } finally {
         setLoading(false);
       }
     };
- 
+
     fetchQuote();
   }, []);
 
@@ -46,9 +48,9 @@ const QuoteCard = () => {
         </blockquote>
       </div>
       <div className="card-footer">
-        Inspirational quotes provided by{" "}
-        <a href="https://zenquotes.io/" target="_blank">
-          ZenQuotes API
+        Random quotes provided by{" "}
+        <a href="https://quoteslate.vercel.app/" target="_blank">
+          QuoteSlate API
         </a>
       </div>
     </div>
