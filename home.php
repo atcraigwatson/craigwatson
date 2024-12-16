@@ -119,6 +119,8 @@
 
     <section id="react-search"></section>
 
+    <section id="react-quote-card"></section>
+
     <div class="card bg-secondary w-100 mb-3">
       <div class="card-header border-bottom py-3">
         Random Quotes
