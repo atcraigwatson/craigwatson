@@ -117,6 +117,8 @@
 
   <aside class="blog-sidebar col-12 col-lg-5 mt-5">
 
+    <section id="react-search"></section>
+
     <div class="card bg-secondary w-100 mb-3">
       <div class="card-header border-bottom py-3">
         Random Quotes

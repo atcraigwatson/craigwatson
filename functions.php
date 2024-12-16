@@ -16,7 +16,7 @@ function craigwatson_scripts_styles() {
   wp_enqueue_style( 'bootsrap-icons', $bootstrap_icons );
   // wp_enqueue_style( 'highlight_js_styles', $highlight_js_styles);
 
-  wp_enqueue_script( 'craigwatson_scripts', get_theme_file_uri() . '/build/index.js', array( 'wp-element' ), '1.0', true );
+  wp_enqueue_script( 'craigwatson_scripts', get_theme_file_uri() . '/build/index.js', array( 'wp-element', 'wp-blocks' ), '1.0', true );
   wp_enqueue_script( 'cw_bootstrap_js', $bootstrap_js, array(), '1.0.0', true );
   wp_enqueue_script( 'highlight_js_scripts', $highlight_js_scripts, array(), '1.0.0', true );
 
