@@ -7,14 +7,12 @@
   <header class="bg-secondary border-top border-bottom py-5">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <hgroup class="col-12">
           <h1 class="display-3 text-center heading-underline position-relative">
             <?php the_title(); ?>
           </h1>
-          <div class="text-center">
-            <small class="text-body-secondary">Posted - <?php echo get_the_date( 'd M Y' ); ?></small>
-          </div>
-        </div>
+          <p class="text-body-secondary text-center">Posted - <?php echo get_the_date( 'd M Y' ); ?></p>
+        </hgroup>
       </div>
     </div>
   </header>
