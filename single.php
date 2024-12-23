@@ -19,13 +19,13 @@
     </div>
   </header>
 
-  <section class="container">
+  <article class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 py-5">
         <?php the_content(); ?>
       </div>
     </div>
-  </section>
+  </article>
 
 </main>
 <!-- ./ main -->
