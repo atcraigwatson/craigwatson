@@ -8,26 +8,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/about-me">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/projects">Recent Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blog">Blog Posts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact-me">Contact Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/atcraigwatson" target="blank">Github <i class="bi bi-box-arrow-up-right"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://codepen.io/atcraigwatson" target="blank">Codepen <i class="bi bi-box-arrow-up-right"></i></a>
-              </li>
-            </ul>
+            <?php wp_nav_menu( array(
+              'theme_location' => 'main-menu',
+              'container' => false,
+              'menu_class' => '',
+              'fallback_cb' => '__return_false',
+              'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto %2$s">%3$s</ul>',
+              'depth' => 0,
+              'walker' => new bootstrap_5_wp_nav_menu_walker()
+            )); ?>
           </div>
         </div>
       </nav>
